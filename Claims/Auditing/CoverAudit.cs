@@ -1,0 +1,16 @@
+﻿namespace Claims.Auditing
+{
+    /// <summary>
+    /// Represents an audit record for an insurance cover.
+    /// </summary>
+    public class CoverAudit
+    {
+        public int Id { get; set; }
+
+        public string CoverId { get; set; } = string.Empty;
+
+        public DateTime Created { get; set; }
+
+        public string HttpRequestType { get; set; } = string.Empty;
+    }
+}
